@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diy</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+  <div data-theme="e" data-role="header" data-position="fixed">
+    <h5>
+      DIY : Drink It Yourself
+    </h5>
+  </div>
+  <div data-role="content">
+    <div style="width: 100%; height: 345px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+      <%= yield %>
+      <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+    </div>
+    <div id="menu_btn" data-role="navbar" data-iconpos="top">
+      <ul>
+        <li>
+          <a href="#search" data-transition="fade" data-theme="e" data-icon="">
+            Search
+          </a>
+        </li>
+        <li>
+          <a href="#famous" data-transition="fade" data-theme="e" data-icon="">
+            Famous
+          </a>
+        </li>
+        <li>
+          <a href="#page1" data-transition="fade" data-theme="e" data-icon="">
+            My
+          </a>
+        </li>
+        <li>
+          <a href="#page1" data-transition="fade" data-theme="e" data-icon="">
+            guitar
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -17,7 +17,9 @@ class CocktailsController < ApplicationController
   def recipe
     
   end
-  
+  def famous
+    
+  end
 
   # GET /cocktails
   # GET /cocktails.json

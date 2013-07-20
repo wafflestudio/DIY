@@ -8,7 +8,8 @@ Diy::Application.routes.draw do
   get 'main' => 'cocktails#main', :as => 'main'
   get 'etc' => 'cocktails#etc', :as => 'etc'
   get 'recipe' => 'cocktails#recipe', :as => 'recipe'
-  
+  get 'my' => 'cocktails#my', :as => 'my'
+  get 'famous' => 'cocktails#famous', :as => 'famous'
 =begin
   def search
   end
@@ -24,6 +25,9 @@ Diy::Application.routes.draw do
   def recipe
     
   end
+  def famous
+  end
+  
 =end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
